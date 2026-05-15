@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charitra - Custom Designer Handmade Clothing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🧵 Charitra</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#custom-design" class="nav-link">Custom Design</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Wear Your Uniqueness</h2>
+            <p>Custom Designer Handmade Clothing Tailored Just For You</p>
+            <button class="cta-btn" onclick="scrollToSection('custom-design')">Start Your Custom Design</button>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections" class="collections">
+        <div class="container">
+            <h2 class="section-title">Our Collections</h2>
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <div class="card-icon">👗</div>
+                    <h3>Women's Designer Wear</h3>
+                    <p>Elegant and sophisticated designs for the modern woman. Custom sarees, dresses, and ethnic wear crafted with precision.</p>
+                    <a href="#" class="card-link">Explore →</a>
+                </div>
+
+                <div class="collection-card">
+                    <div class="card-icon">👔</div>
+                    <h3>Men's Custom Tailoring</h3>
+                    <p>Premium bespoke suits, shirts, and traditional wear. Perfect fit, perfect style, perfectly you.</p>
+                    <a href="#" class="card-link">Explore →</a>
+                </div>
+
+                <div class="collection-card">
+                    <div class="card-icon">👶</div>
+                    <h3>Children's Wear</h3>
+                    <p>Comfortable and colorful designs for kids. Fun, playful, and perfectly safe for active children.</p>
+                    <a href="#" class="card-link">Explore →</a>
+                </div>
+
+                <div class="collection-card">
+                    <div class="card-icon">💍</div>
+                    <h3>Special Occasions</h3>
+                    <p>Stunning bridal wear, party dresses, and event outfits. Make your special day even more special.</p>
+                    <a href="#" class="card-link">Explore →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Design Process Section -->
+    <section id="custom-design" class="custom-design">
+        <div class="container">
+            <h2 class="section-title">How Custom Design Works</h2>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Consultation</h4>
+                    <p>Share your vision, preferences, and ideas with our expert designers. We listen and understand your style.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Design</h4>
+                    <p>Our talented designers create custom sketches and designs based on your requirements.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Customization</h4>
+                    <p>Choose fabrics, colors, patterns, and details. Every element is customized to perfection.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Creation</h4>
+                    <p>Our master craftspeople handmake your garment with meticulous attention to detail.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h4>Delivery</h4>
+                    <p>Your custom creation arrives, perfectly crafted and ready to wear with pride.</p>
+                </div>
+            </div>
+            <button class="cta-btn" onclick="scrollToSection('contact')">Order Your Custom Design</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Why Choose Charitra?</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>🎨 Unique Designs</h3>
+                    <p>Every piece is one-of-a-kind, crafted specifically for you with creative excellence.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>✋ Handmade Quality</h3>
+                    <p>Master craftspeople bring decades of experience to every stitch and detail.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>🌱 Sustainable Fashion</h3>
+                    <p>We use eco-friendly materials and sustainable practices in all our designs.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>💯 Perfect Fit</h3>
+                    <p>Custom tailored to your measurements for ultimate comfort and confidence.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>⏱️ Timely Delivery</h3>
+                    <p>On-time delivery with tracking. We respect your time and commitments.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>💬 Expert Support</h3>
+                    <p>Dedicated customer support throughout your custom design journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="type">Design Type</label>
+                            <select id="type" name="type" required>
+                                <option value="">Select a design type</option>
+                                <option value="women">Women's Designer Wear</option>
+                                <option value="men">Men's Custom Tailoring</option>
+                                <option value="children">Children's Wear</option>
+                                <option value="bridal">Bridal & Special Occasions</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your design ideas..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="cta-btn">Send Inquiry</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <h4>📧 Email</h4>
+                        <p>hello@charitra.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>📱 Phone</h4>
+                        <p>+1 (555) 000-0000</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>📍 Address</h4>
+                        <p>Fashion District<br>Creative Hub, City Center</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>🕐 Hours</h4>
+                        <p>Monday - Friday: 10 AM - 6 PM<br>Saturday: 11 AM - 5 PM<br>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Charitra. All rights reserved. | Custom Designer Handmade Clothing</p>
+            <p>Crafted with love, designed for you. 🧵✨</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
